@@ -1,0 +1,26 @@
+flutter_native_splash:
+  # =====================================
+  # CONFIG GENERALE
+  # =====================================
+  android: true
+  ios: true
+  web: false
+
+  color: "#0A0A0A"
+
+  # Splash classico (Android < 12, iOS)
+  image: assets/images/splash/splash_center.png
+
+  # =====================================
+  # ANDROID 12+
+  # =====================================
+  android_12:
+    color: "#0A0A0A"
+    image: assets/splash/splash_icon_android12.png
+    icon_background_color: "#0A0A0A"
+
+  # =====================================
+  # iOS SPECIFIC
+  # =====================================
+  ios_content_mode: center
+  ios_image_alignment: center

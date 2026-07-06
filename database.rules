@@ -1,0 +1,70 @@
+{
+  "rules": {
+    "today": {
+      ".read": false,
+      ".write": false
+    },
+    "usernames": {
+      "$username": {
+        ".read": false,
+
+        ".write": "(
+        (!data.exists() && newData.exists() && newData.val() === auth.uid)
+        ) || (
+        (data.exists() && !newData.exists() && data.val() === auth.uid) 
+        )"
+      }
+    },
+    "likers": {
+      ".read": false,
+      "$uid": {
+        ".write": "$uid === auth.uid && !data.exists()",
+        ".validate": "newData.isBoolean()"
+      }
+    },
+    "reviewers": {
+      ".read": false,
+      "$uid": {
+        ".write": "$uid === auth.uid && !data.exists()",
+        ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 5"
+      }
+    },
+    "saved": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        "$index": {
+          ".validate": "newData.exists() && $index >= 0 && $index < 6"
+        }   
+      }
+    },
+    "figures": {
+      "$date": {
+        "like": {
+          ".read": true,
+          ".write": false
+        },
+        "rating": {
+          ".read": false,
+          ".write": false
+        },
+        "content": {
+          ".write": false,
+          ".read": "$date == root.child('today').val()",
+          "languages": {
+            "$locale": {
+              "title": {
+                ".read": "$date <= root.child('today').val()"
+              },
+              "tags": {
+                ".read": "$date <= root.child('today').val()"
+              }
+            }
+          }
+        }
+      }
+    },
+    ".read": false,
+    ".write": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "daily-history-database",
+          "appId": "1:192528633998:android:3a9d7f6cb5da8f1f70f9df",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "daily-history-database",
+          "configurations": {
+            "android": "1:192528633998:android:3a9d7f6cb5da8f1f70f9df",
+            "ios": "1:192528633998:ios:ddde10cf3281593a70f9df"
+          }
+        }
+      }
+    }
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}

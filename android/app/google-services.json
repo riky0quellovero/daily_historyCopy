@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "192528633998",
+    "firebase_url": "https://daily-history-database-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "daily-history-database",
+    "storage_bucket": "daily-history-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192528633998:android:3a9d7f6cb5da8f1f70f9df",
+        "android_client_info": {
+          "package_name": "io.cobu.daily_history"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192528633998-but43egcshoiq390l9kbhri9qge0htik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.cobu.daily_history",
+            "certificate_hash": "9aee124446287c4e2029219ce413aed42292796f"
+          }
+        },
+        {
+          "client_id": "192528633998-fjd547jaf3e588ouqqpgau5t0a69b2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgxlUQg1SKgXHQDZuuVifMB9DZ0xOYhnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192528633998-fjd547jaf3e588ouqqpgau5t0a69b2q3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "192528633998-e3p0da87qd0mf1pe672phtm9ccute3nr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.cobu.dailyHistory"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

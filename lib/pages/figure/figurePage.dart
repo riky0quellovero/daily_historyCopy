@@ -91,9 +91,9 @@ class FigurePage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          (snapshot.data?[0] ?? Text('dio1')) as Widget,
-                          (snapshot.data?[1] ?? Text('dio2')) as Widget,
-                          ...(snapshot.data?[2] ?? [Text('dio'), Text('dio')]) as List<Widget>,
+                          (snapshot.data?[0] ?? Text('error1')) as Widget,
+                          (snapshot.data?[1] ?? Text('error2')) as Widget,
+                          ...(snapshot.data?[2] ?? [Text('error'), Text('error')]) as List<Widget>,
                           const SizedBox(height: 40),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
